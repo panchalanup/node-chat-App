@@ -7,7 +7,9 @@ html{
     font-size:16px}
     
 input{
-    font-size:14px}
+    font-size:14px;
+    border-radius: 5px;
+}
     
 body{
     line-height:1.4;
@@ -26,23 +28,29 @@ label{
 input{
     border:1px solid #eee;
     padding:12px;
-    outline:none}
+    outline:none
+}
+
+input:focus{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.098);
+}
 
 button{
     cursor:pointer;
     padding:12px;
-    background-color:#7C5CBF;
+    background-color: #00BFFF; /*#87CEFA; */
     border:none;
+    border-radius: 5px;
     color:#fff;
     font-size:16px;
     transition:background-color 0.3s ease}
     
 button:hover{
-    background:#6b47b8}
+    background:#00a0d5}
     
 button:disabled{
     cursor:default;
-    background:#7c5cbf94}
+    background:#00bfff9a}
     
 .centered-form{
     background:#333744;
@@ -50,13 +58,16 @@ button:disabled{
     height:100vh;
     display:flex;
     justify-content:center;
-    align-items:center}
+    align-items:center;
+}
     
 .centered-form__box{
     box-shadow:0 0 17px 1px #1D1F26;
     background:#F7F7FA;
     padding:24px;
-    width:250px}
+    width:250px;
+    border-radius: 5px;
+}
     
 .centered-form button{
     width:100%}
@@ -100,7 +111,12 @@ button:disabled{
     font-size:14px}
     
 .message a{
-    color:#0070CC}
+    color:black; /* #0070CC; */
+    padding: 2px;
+    border-radius: 3px;
+    margin-top: 10px;
+    background-color: #e4fee4;
+}
     
 .compose{
     display:flex;

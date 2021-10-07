@@ -38,6 +38,8 @@ const autoscroll = () => {
     if(containerHeight - newMessageHeight <= scrollOffset){
         messages.scrollTop = messages.scrollHeight
     }
+    //console.log('containerHeight', 'newMessagHeight', 'scrillOffset')
+    //console.log(containerHeight, newMessageHeight, scrollOffset, messages.scrollTop)
 }
 
 
